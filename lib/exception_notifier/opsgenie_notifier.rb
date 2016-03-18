@@ -12,7 +12,6 @@ module ExceptionNotifier
     end 
 
     def call(e, options={})
-      debugger
       # create description
       msg = e.message.blank? ? 'n/a' : e.message
       clss = e.class.blank? ? 'n/a' : e.class
